@@ -1,0 +1,9 @@
+<map id="map" longitude="{{longitude}}"
+              latitude="{{latitude}}"
+              markers="{{makers}}"
+              style="width:{{mapw}}; height:{{maph}}"        
+              show-location="true"
+              controls="controls">
+
+</map>
+<button bindtap='buttontap' id="1">获取当前位置</button>

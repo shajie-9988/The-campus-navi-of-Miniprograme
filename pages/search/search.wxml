@@ -1,0 +1,13 @@
+
+<view class="sj-search-bar">
+	<form class="sj-search-bar_form">
+		<view class="sj-search-bar__box">
+			<i class="sj-icon-search"></i>
+				<input type="text" class="sj-search-bar_input" placeholder='搜索' value="{{inputvalue}}" bindinput="inputTyping"/>
+		</view>
+		<label class="sj-search-bar_label" bindtap="showInput">
+			<span class="sj-search-bar_text">搜索</span>
+		</label>
+	</form>
+		<view class="sj-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+</view>
