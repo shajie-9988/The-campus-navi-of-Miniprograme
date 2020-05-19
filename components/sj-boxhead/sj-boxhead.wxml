@@ -1,0 +1,3 @@
+<view class="out-style">
+  <view class="in-style">{{boxheadname}}</view>
+</view>

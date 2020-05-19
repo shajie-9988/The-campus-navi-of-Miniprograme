@@ -1,9 +1,41 @@
-<map id="map" longitude="{{longitude}}"
-              latitude="{{latitude}}"
-              markers="{{makers}}"
-              style="width:{{mapw}}; height:{{maph}}"        
-              show-location="true"
-              controls="controls">
+<!--pages/EduBase/EduBase.wxml-->
+ 
+<wxs module="test" src="./sidebar.wxs"></wxs>
+  <view class="page-bottom"  bindtouchstart="{{test.touchstart}}">
+    <view class="button">
+      <text>显示主要地点分类</text>     
+    </view> 
+    <view class="page-content">
+      <view class="cityBox" wx:for="{{listALL}}" bindtap="goto" data-id="{{item.id}}" data-sum="{{item.sum}}" 
+      data-canteenarray="{{item.canteenarray}}" 
+      data-teacharray="{{item.teacharray}}" 
+      data-dorarray="{{item.dorarray}}"
+      data-otherarray="{{item.otherarray}}">
+        <!--<text>{{item.areaname}}</text>
+        <text class="tips">{{item.count}}个</text>-->
+        <text>{{item.listname}}</text>
+      </view>
+    </view>
+  </view>
 
+<map
+      id="myMap"
+      style="width: 100%; height: 100%;"
+      longitude="{{longitude}}" 
+      latitude="{{latitude}}" 
+      id="map"
+      scale="16"
+      bindcallouttap="callBtp" 
+      markers="{{markers}}"
+      show-location>
+  <cover-view class="cover-view">
+      <cover-view  bindtap="navitosearch" type="text" class="sj-search-bar_view" 
+                   hold-keyboard="true">搜索地点
+      </cover-view>
+  </cover-view>
+
+  <cover-view class="cover_view">
+    <cover-image src="/img/location(1).png"class="Location"bindtap='buttontap' ></cover-image>
+  </cover-view>
 </map>
-<button bindtap='buttontap' id="1">获取当前位置</button>
+

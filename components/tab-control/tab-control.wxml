@@ -1,0 +1,6 @@
+<view class='tab-control'>
+  <view class="tab-item" bindtap="handleTapOne">教学楼</view>
+  <view class="tab-item" bindtap="handleTapTwo">食堂</view>
+  <view class="tab-item" bindtap="handleTapThree">宿舍楼</view>
+  <view class="tab-item" bindtap="handleTapFour">其他</view>
+</view>

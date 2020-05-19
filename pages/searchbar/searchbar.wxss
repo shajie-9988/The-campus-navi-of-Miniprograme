@@ -1,0 +1,52 @@
+.input{
+  background: rgb(210, 210, 244);
+  width: 70%;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  border:1px solid black;
+  border-radius: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.searchbackground{
+  width: 100%;
+  height: 60px;
+  border-bottom:1px solid black;
+  border-top: 1px solid black;
+}
+.iconsearch{
+  size: 16px;
+  position: absolute;
+  top: 22px;
+  left: calc(50% - 96rpx);
+  z-index: 5;
+}
+.iconcancel{
+  size: 16px;
+  position: absolute;
+  top: 22px;
+  right: 20%;
+  z-index: 5;
+}
+
+.searchbackground:hover > .search-box{
+  width: 200px;
+}
+
+.cancel{
+  font-size: 16px;
+  right: 22px;
+  top: 22px;
+  color: blue;
+  float: left;
+}
+
+.xxx{
+  color: black;
+}
+
+.yyy{
+  color: blue;
+}

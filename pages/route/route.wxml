@@ -1,0 +1,54 @@
+
+<view>
+  <map
+  id="myMap"
+  scale="{{scale}}"
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  markers="{{markers}}" 
+  bindcallouttap="gotodetail"
+  style="width: 100%; height: {{infoheight}};"
+  polyline="{{polyline}}">
+  </map>
+  <cover-view class="cover_view">
+      <cover-image src="/img/location(1).png"class="Location"bindtap='backToCenter' ></cover-image>
+  </cover-view>
+</view>
+
+<view class="nameClass">{{name}}</view>
+<view class="addClass">{{address}}</view>
+
+
+<view  data-polyline1="{{polyline1}}" data-polyline2="{{polyline2}}">
+  <form bindsubmit="formSubmit">
+    <view hidden="false">
+      <view class="outview">
+        <view class="view">始发地:</view> <input style="border:1px solid #000;" class="input" name="currentLocation" value="{{currentLocation}}" ></input>
+      </view>
+      <view class="stick"></view>
+      <view class="outview">
+        <view class="view">目的地:</view> <input style="border:1px solid #000;" class="input" name="aimLocation" value="{{aimLocation}}" ></input>
+      </view>
+    </view>
+    <!--提交表单数据-->
+    <image style="height:60px;width:60px" class="position" src="../../img/route.png"></image>
+    <button size="mini" form-type="submit" bindtap="makeTheRoute" class="buttonheight">路线</button>
+  </form>
+</view>
+
+<view class="navichange">
+  <view class="navibar" bindtap="binddetail">
+    <image src="../../img/xiangqing.png" style="height:17px;width:17px" class="src1"></image> 
+    详情
+  </view>
+  <view class="navibar" bindtap="bindaround">
+    <image src="../../img/fujin.png" style="height:17px;width:17px" class="src2"></image>
+    附近
+  </view>
+  <view class="navibar" >
+    <button open-type="share" class="buttonshare" hover-class="none"></button>
+    <image src="../../img/fenxiang.png" style="height:17px;width:17px" class="src3"></image>
+    分享
+  </view>
+</view>
+

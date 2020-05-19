@@ -1,0 +1,14 @@
+<sj-boxhead boxheadname="其他" />
+
+<scroll-view style="height:{{infoheight}}px" scroll-y="true">
+<view class="list-name" 
+  wx:for="{{othersArray}}" 
+  hover-class="gray" 
+  bindtap="gotoRoutePage" 
+  data-name='{{item.name}}' 
+  data-coord="{{item.coord}}">
+    <view class="imageblock"><image src="{{item.img}}" style="height:80px ; width:80px ; margin:10px" /></view>
+    {{item.name}}
+    <view class="imgblock"><image src="../../img/quzheli.png" style="height:50px ; width:50px ; margin:25px"></image></view>
+</view>
+</scroll-view>

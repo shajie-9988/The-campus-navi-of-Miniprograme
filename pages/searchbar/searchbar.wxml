@@ -1,0 +1,21 @@
+<view class="searchbackground">
+  <view class="search-box">
+    <icon type="search" class="iconsearch"></icon>
+    <input class="input" placeholder="搜索"
+            placeholder-style="text-align: center"
+            placeholder-class="font-size:18px"
+            bindfocus="change"
+            bindblur="cahngeback">
+    </input>
+  </view>
+
+  <icon hidden="{{!statue}}"
+        class="iconcancel" 
+        type="cancel">
+  </icon>
+  <view hidden="{{statue}}" class="cancle">取消</view>
+</view>
+
+<view>{{istrue? '{{xxx}}':'{{yyy}}'}}</view>
+<view class="{{istrue? 'xxx':'yyy'}}">测试</view>
+<button bindtap="change">change</button>

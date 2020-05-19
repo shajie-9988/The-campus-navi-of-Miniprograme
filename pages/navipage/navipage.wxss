@@ -1,0 +1,120 @@
+.navigoandto{
+  height: 90px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.navigo{
+  position: absolute;
+  width: 90%;
+  background: rgb(232, 232, 232);
+  left: 20px;
+  top: 9px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.navigogo{
+  position: absolute;
+  left: 24px;
+}
+.navito{
+  position: absolute;
+  width: 90%;
+  background: rgb(232, 232, 232);
+  left: 20px;
+  top: 49px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.icongo{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+.ways-view{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+}
+
+.ways{
+  flex:1;
+  text-align: center;
+}
+
+.active{
+  border-bottom: blue 2px solid;
+}
+
+.text1{
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+  position: absolute;
+  left: 20px;
+  bottom: 40px;
+}
+
+.text2{
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  position: absolute;
+  left: 22px;
+  bottom: 0px;
+}
+.text3{
+  height: 40px;
+  position: absolute;
+  font-size: 22px;
+  line-height: 40px;
+  bottom: 20px;
+  right: 15px;
+  border-radius: 20px;
+  background: blue;
+  color: #ffffff;
+  width: 100px;
+  text-align: center;
+}
+.text4{
+  height: 40px;
+  position: absolute;
+  font-size: 22px;
+  line-height: 40px;
+  bottom: 20px;
+  right: 15px;
+  width: 40px;
+}
+.information{
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140px;
+}
+.position{
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+.dix{
+  color: #ffffff;
+  flex:1;
+  text-align: center;
+  line-height: 50px;
+}
+.instruction{
+  color: #ffffff;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  font-size: 40rpx;
+  text-align: center;
+}

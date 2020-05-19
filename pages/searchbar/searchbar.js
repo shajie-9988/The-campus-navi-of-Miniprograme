@@ -1,0 +1,20 @@
+// pages/searchbar/searchbar.js
+Page({
+  data:{
+    statue:false,
+    istrue:true,
+    xxx:12,
+    yyy:222
+  },
+  change:function(e){
+    console.log("----")
+  },
+  changeback:function(){
+    console.log("---")
+  },
+  change:function(){
+    this.setData({
+      istrue:false
+    })
+  }
+})

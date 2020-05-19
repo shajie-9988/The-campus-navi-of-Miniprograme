@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"enhance": true,
 		"postcss": true,
@@ -24,7 +24,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.1",
+	"libVersion": "2.10.4",
 	"appid": "wxb9a4c144e2697213",
 	"projectname": "The%20campus%20navigation%20Mini%20Program",
 	"cloudfunctionTemplateRoot": "",

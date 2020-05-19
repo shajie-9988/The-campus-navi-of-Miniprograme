@@ -1,0 +1,10 @@
+<view class="background">
+  <view class="search-box">
+    <input class="search-txt" placeholder="type to search "></input>
+    <view class="search-btn">
+    
+      <icon type="search"></icon>
+    </view>
+  </view>
+
+</view>

@@ -1,13 +1,30 @@
+<view class="background" bindtap="showInput">
 
-<view class="sj-search-bar">
-	<form class="sj-search-bar_form">
-		<view class="sj-search-bar__box">
-			<i class="sj-icon-search"></i>
-				<input type="text" class="sj-search-bar_input" placeholder='搜索' value="{{inputvalue}}" bindinput="inputTyping"/>
-		</view>
-		<label class="sj-search-bar_label" bindtap="showInput">
-			<span class="sj-search-bar_text">搜索</span>
-		</label>
-	</form>
-		<view class="sj-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+	<view hidden="{{!inputShowed}}" class="search-back" bindtap="backLastPage">
+		<image src="../../img/houtui.png" class="houtui" ></image>
+	</view>
+  <view class="search-box">
+    	<input class="search-txt" placeholder="type to search " bindconfirm="formSubmit" bindinput="getsuggest" value="{{backfill}}"
+			bindblur="hideInput" bindfocus="showInput"></input>
+    	<view class="search-btn">
+      	<icon class="iconclass" type="search"></icon>
+    	</view>
+  	</view>
+	<view hidden="{{!inputShowed}}" class="search-cancel" bindtap="clearInput">
+		<image class="shanchu" src="../../img/shanchu.png" ></image>
+	</view>
+</view>
+
+
+
+<tab-control/>
+<view class="stick"></view>
+
+<view wx:if="{{!backfill.length > 0}}" >
+	<view wx:for="{{suggestion}}" wx:key="index" data-searchLat="{{item.searchLat}}" data-searchLng="{{item.searchLng}}" data-searchLocName="{{item.searchLocName}}" data-searchaddr="{{item.searchaddr}}">
+    <!--绑定回填事件-->
+    <view>
+    <view class="backfill" bindtap="backfill" id="{{index}}">{{item.title}}</view>
+    </view>
+	</view>
 </view>

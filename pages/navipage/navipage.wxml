@@ -1,0 +1,51 @@
+<view class="navigoandto" hidden="{{!condition}}">
+  <view class="navigo">
+    <image src="../../img/yuancircle46.png" style="height:16px;width:16px" class="icongo"></image>
+    <view class="navigogo">当前位置{{mypoistion}}</view>  
+  </view>
+  <view class="navito">
+    <image src="../../img/location.png" style="height:16px;width:16px" class="icongo"></image>
+    <view class="navigogo">{{needto}}</view>
+  </view>
+</view>
+
+<view class="ways-view"  hidden="{{!condition}}">
+  <block wx:for="{{goandto}}" wx:key="{{index}}" >
+    <view class="ways {{currentIndex == index?'active':''}}" bindtap="goto" data-index="{{index}}">
+      <image src="{{item.img}}" style="height:30px;width:30px;padding:10px"></image>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{condition}}">
+  <swiper indicator-dots indicator-active-color="blue" style="height:140px"> 
+    <block wx:for="{{steps}}"> 
+      <swiper-item class="information">
+        <view class="position">
+          <view class="dix">{{item.road_name}}</view>
+          <view class="dix">{{item.dir_desc}}</view>
+          <view class="dix">{{item.distance}}米</view>
+        </view>
+        <view class="instruction">{{item.instruction}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<map id="myMap"
+  longitude="{{xlongitude}}" 
+  latitude="{{xlatitude}}" 
+  markers="{{markers}}"
+  style="width: 100%; height: {{bottomheight}}px;"
+  polyline="{{poly}}">
+</map>
+
+<view style="witdh:100%;height:80px">
+  <view class="text1">{{time}}</view>
+  <view class="text2">{{distants}}</view>
+  <view hidden="{{!conditionView}}">
+    <view bindtap="navi" class="text3"  hidden="{{!condition}}">导航</view>
+  </view>
+  <view class="text4" hidden="{{condition}}" bindtap="back">
+    <image src="../../img/cancel.png" style="height:40px;width:40px" ></image>
+  </view>
+</view>

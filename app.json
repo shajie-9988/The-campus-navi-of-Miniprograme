@@ -1,16 +1,28 @@
 {
   "pages": [
+    "pages/map/map",
+    "pages/searchbar/searchbar",
+    "pages/xxx/xxx",
     "pages/search/search",
-    "pages/map/map"
-    
+    "pages/route/route",
+    "pages/thbuilding/thbuilding",
+    "pages/canteen/canteen",
+    "pages/dorbuilding/dorbuilding",
+    "pages/others/others",
+    "pages/navipage/navipage"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "小程序",
-    "backgroundColor": "#eeeeee",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh": false
+    "enablePullDownRefresh": false,
+    "navigationBarTitleText":"kirito小程序"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"需要获取您的位置信息"
+    }
+  }
 }
